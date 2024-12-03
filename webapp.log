@@ -1,0 +1,5 @@
+2024/12/02 10:22:40 main.go:15: test
+2024/12/03 01:27:32 users.go:31: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2024/12/03 01:28:15 users.go:31: not enough args to execute query: want 5 got 4
+2024/12/03 01:30:53 users.go:31: not enough args to execute query: want 5 got 4
+2024/12/03 01:31:05 users.go:31: not enough args to execute query: want 5 got 4
