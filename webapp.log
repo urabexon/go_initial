@@ -3,3 +3,2643 @@
 2024/12/03 01:28:15 users.go:31: not enough args to execute query: want 5 got 4
 2024/12/03 01:30:53 users.go:31: not enough args to execute query: want 5 got 4
 2024/12/03 01:31:05 users.go:31: not enough args to execute query: want 5 got 4
+2024/12/04 11:19:01 server.go:3197: http: panic serving [::1]:51758: open app/views/templates/public_navber.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00011bb90})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e0e0}, {0x846800, 0x94a120}, {0xc00013f9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc00019e0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011b6b0?}, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001354a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:02 server.go:3197: http: panic serving [::1]:51764: open app/views/templates/public_navber.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008e540})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2000}, {0x846800, 0x94a120}, {0xc00021a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2000}, 0xc000228000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204090?}, {0x94cb80, 0xc0000a2000}, 0xc000228000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000208000, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:02 server.go:3197: http: panic serving [::1]:51770: open app/views/templates/public_navber.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008e9f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a20e0}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a20e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc0000a20e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a20e0}, 0xc000094000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008e090?}, {0x94cb80, 0xc0000a20e0}, 0xc000094000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090000, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:02 server.go:3197: http: panic serving [::1]:51782: open app/views/templates/public_navber.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008ef90})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a21c0}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a21c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc0000a21c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a21c0}, 0xc000094100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008eb10?}, {0x94cb80, 0xc0000a21c0}, 0xc000094100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000900a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:02 server.go:3197: http: panic serving [::1]:51786: open app/views/templates/public_navber.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008f4d0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a22a0}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a22a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc0000a22a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a22a0}, 0xc000094200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008f050?}, {0x94cb80, 0xc0000a22a0}, 0xc000094200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090140, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:04 server.go:3197: http: panic serving [::1]:51794: open app/views/templates/public_navber.html: no such file or directory
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008fa10})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2380}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc0000a2380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2380}, 0xc000094300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008f590?}, {0x94cb80, 0xc0000a2380}, 0xc000094300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000901e0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:04 server.go:3197: http: panic serving [::1]:51802: open app/views/templates/public_navber.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001d8090})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e1c0}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e1c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc00019e1c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e1c0}, 0xc000094400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008fad0?}, {0x94cb80, 0xc00019e1c0}, 0xc000094400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090280, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:04 server.go:3197: http: panic serving [::1]:51816: open app/views/templates/public_navber.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008ffb0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2460}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2460?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2460?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2460}, 0xc000194200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011bbf0?}, {0x94cb80, 0xc0000a2460}, 0xc000194200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090320, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:04 server.go:3197: http: panic serving [::1]:51826: open app/views/templates/public_navber.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0002a0510})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2540}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2540?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2540?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2540}, 0xc000094500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002a0090?}, {0x94cb80, 0xc0000a2540}, 0xc000094500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000903c0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:05 server.go:3197: http: panic serving [::1]:51834: open app/views/templates/public_navber.html: no such file or directory
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0002a0a50})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2620}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2620?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2620?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2620}, 0xc000094600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002a05d0?}, {0x94cb80, 0xc0000a2620}, 0xc000094600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090460, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:05 server.go:3197: http: panic serving [::1]:51836: open app/views/templates/public_navber.html: no such file or directory
+goroutine 62 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0002a1050})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2700}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2700?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2700?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2700}, 0xc000094700)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002a0b10?}, {0x94cb80, 0xc0000a2700}, 0xc000094700)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090500, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:05 server.go:3197: http: panic serving [::1]:51852: open app/views/templates/public_navber.html: no such file or directory
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0002a14d0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a27e0}, {0x846800, 0x94a120}, {0xc00021a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a27e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc0000a27e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a27e0}, 0xc000094800)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002a0bd0?}, {0x94cb80, 0xc0000a27e0}, 0xc000094800)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000905a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:05 server.go:3197: http: panic serving [::1]:51860: open app/views/templates/public_navber.html: no such file or directory
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0002a1a10})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a28c0}, {0x846800, 0x94a120}, {0xc00021a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a28c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc0000a28c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a28c0}, 0xc000094900)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002a1590?}, {0x94cb80, 0xc0000a28c0}, 0xc000094900)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090640, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:05 server.go:3197: http: panic serving [::1]:51868: open app/views/templates/public_navber.html: no such file or directory
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0002a1f50})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a29a0}, {0x846800, 0x94a120}, {0xc00021a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a29a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19df8?, {0x94cb80?, 0xc0000a29a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a29a0}, 0xc000094a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002a1ad0?}, {0x94cb80, 0xc0000a29a0}, 0xc000094a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000906e0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:05 server.go:3197: http: panic serving [::1]:51876: open app/views/templates/public_navber.html: no such file or directory
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0003163f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2a80}, {0x846800, 0x94a120}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2a80?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2a80?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2a80}, 0xc00039c000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000384090?}, {0x94cb80, 0xc0000a2a80}, 0xc00039c000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000388000, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:05 server.go:3197: http: panic serving [::1]:51890: open app/views/templates/public_navber.html: no such file or directory
+goroutine 76 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000316930})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2b60}, {0x846800, 0x94a120}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2b60?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2b60?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2b60}, 0xc000094b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003164b0?}, {0x94cb80, 0xc0000a2b60}, 0xc000094b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090780, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:10 server.go:3197: http: panic serving [::1]:41296: open app/views/templates/public_navber.html: no such file or directory
+goroutine 79 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000316e70})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2c40}, {0x846800, 0x94a120}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2c40?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2c40?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2c40}, 0xc000094c00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003169f0?}, {0x94cb80, 0xc0000a2c40}, 0xc000094c00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090820, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:30 server.go:3197: http: panic serving [::1]:41298: open app/views/templates/public_navber.html: no such file or directory
+goroutine 98 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0003173b0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2d20}, {0x846800, 0x94a120}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2d20?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2d20?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2d20}, 0xc000094d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000316f30?}, {0x94cb80, 0xc0000a2d20}, 0xc000094d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000908c0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:30 server.go:3197: http: panic serving [::1]:50568: open app/views/templates/public_navber.html: no such file or directory
+goroutine 101 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0003178f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a2e00}, {0x846800, 0x94a120}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a2e00?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fae82a19d08?, {0x94cb80?, 0xc0000a2e00?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a2e00}, 0xc000094e00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000317470?}, {0x94cb80, 0xc0000a2e00}, 0xc000094e00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090960, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:44 server.go:3197: http: panic serving [::1]:39656: open app/views/templates/public_navber.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00011bb90})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e0e0}, {0x846800, 0x94a120}, {0xc00013f9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3df8?, {0x94cb80?, 0xc00019e0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011b6b0?}, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001355e0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:45 server.go:3197: http: panic serving [::1]:39672: open app/views/templates/public_navber.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001da1e0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e1c0}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e1c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3df8?, {0x94cb80?, 0xc00019e1c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e1c0}, 0xc000194200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011bc50?}, {0x94cb80, 0xc00019e1c0}, 0xc000194200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135680, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:45 server.go:3197: http: panic serving [::1]:39688: open app/views/templates/public_navber.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001da690})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e2a0}, {0x846800, 0x94a120}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e2a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc00019e2a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e2a0}, 0xc000194300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011bd10?}, {0x94cb80, 0xc00019e2a0}, 0xc000194300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135720, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:45 server.go:3197: http: panic serving [::1]:39692: open app/views/templates/public_navber.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001dac30})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e380}, {0x846800, 0x94a120}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc00019e380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e380}, 0xc000194400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001da7b0?}, {0x94cb80, 0xc00019e380}, 0xc000194400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001357c0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:46 server.go:3197: http: panic serving [::1]:39696: open app/views/templates/public_navber.html: no such file or directory
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001db170})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e460}, {0x846800, 0x94a120}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e460?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc00019e460?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e460}, 0xc000194500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dacf0?}, {0x94cb80, 0xc00019e460}, 0xc000194500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135860, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:46 server.go:3197: http: panic serving [::1]:39710: open app/views/templates/public_navber.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008e510})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a0000}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a0000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc0000a0000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a0000}, 0xc000092000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008e090?}, {0x94cb80, 0xc0000a0000}, 0xc000092000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090000, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:46 server.go:3197: http: panic serving [::1]:39720: open app/views/templates/public_navber.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008ea50})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a00e0}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a00e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc0000a00e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a00e0}, 0xc000092100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008e5d0?}, {0x94cb80, 0xc0000a00e0}, 0xc000092100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000900a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:19:46 server.go:3197: http: panic serving [::1]:57186: open app/views/templates/public_navber.html: no such file or directory
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008ef90})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a01c0}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a01c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc0000a01c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a01c0}, 0xc000092200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008eb10?}, {0x94cb80, 0xc0000a01c0}, 0xc000092200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000090140, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:20:16 server.go:3197: http: panic serving [::1]:57202: open app/views/templates/public_navber.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00008f470})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0000a0380}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0000a0380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc0000a0380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0000a0380}, 0xc000092300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008eff0?}, {0x94cb80, 0xc0000a0380}, 0xc000092300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000288000, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:20:16 server.go:3197: http: panic serving [::1]:55586: open app/views/templates/public_navber.html: no such file or directory
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000284540})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0002ac0e0}, {0x846800, 0x94a120}, {0xc00029a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0002ac0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc0002ac0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0002ac0e0}, 0xc0002a8000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000284090?}, {0x94cb80, 0xc0002ac0e0}, 0xc0002a8000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000901e0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:20:16 server.go:3197: http: panic serving [::1]:55596: open app/views/templates/public_navber.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000284a80})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0002ac2a0}, {0x846800, 0x94a120}, {0xc00029a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0002ac2a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f69e8dc3d08?, {0x94cb80?, 0xc0002ac2a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0002ac2a0}, 0xc0002a8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000284600?}, {0x94cb80, 0xc0002ac2a0}, 0xc0002a8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002880a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:34:38 server.go:3197: http: panic serving [::1]:40568: template: signup.html:17: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013180})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001820e0}, {0x0, 0x0}, {0xc0000b19e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001820e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7f4e6afc4688?, {0x94cb80?, 0xc0001820e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001820e0}, 0xc0000f8100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000976b0?}, {0x94cb80, 0xc0001820e0}, 0xc0000f8100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a74a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:34:38 server.go:3197: http: panic serving [::1]:40584: template: signup.html:17: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013330})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001821c0}, {0x0, 0x0}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001821c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7f4e6afc4688?, {0x94cb80?, 0xc0001821c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001821c0}, 0xc0000f8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000097e30?}, {0x94cb80, 0xc0001821c0}, 0xc0000f8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7540, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:34:38 server.go:3197: http: panic serving [::1]:40600: template: signup.html:17: unexpected EOF
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000134e0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001822a0}, {0x0, 0x0}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001822a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7f4e6afc4688?, {0x94cb80?, 0xc0001822a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001822a0}, 0xc0000f8300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c0570?}, {0x94cb80, 0xc0001822a0}, 0xc0000f8300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a75e0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:34:39 server.go:3197: http: panic serving [::1]:40612: template: signup.html:17: unexpected EOF
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013690})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182380}, {0x0, 0x0}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000182380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7f4e6afc4688?, {0x94cb80?, 0xc000182380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182380}, 0xc0000f8400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c0c90?}, {0x94cb80, 0xc000182380}, 0xc0000f8400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7680, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:34:44 server.go:3197: http: panic serving [::1]:40622: template: signup.html:17: unexpected EOF
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013840})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182460}, {0x0, 0x0}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000182460?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7f4e6afc4688?, {0x94cb80?, 0xc000182460?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182460}, 0xc0000f8500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c13b0?}, {0x94cb80, 0xc000182460}, 0xc0000f8500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7720, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:34:44 server.go:3197: http: panic serving [::1]:40634: template: signup.html:17: unexpected EOF
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000139f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182540}, {0x0, 0x0}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000182540?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7f4e6afc4688?, {0x94cb80?, 0xc000182540?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182540}, 0xc0000f8600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c1ad0?}, {0x94cb80, 0xc000182540}, 0xc0000f8600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a77c0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:34:44 server.go:3197: http: panic serving [::1]:40642: template: signup.html:17: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013ba0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182620}, {0x0, 0x0}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000182620?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7f4e6afc4688?, {0x94cb80?, 0xc000182620?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182620}, 0xc0000f8700)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000212210?}, {0x94cb80, 0xc000182620}, 0xc0000f8700)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7860, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:55 server.go:3197: http: panic serving [::1]:46170: template: signup.html:17: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013190})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001820e0}, {0x0, 0x0}, {0xc0000b19e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001820e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc0001820e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001820e0}, 0xc0000f8100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000976b0?}, {0x94cb80, 0xc0001820e0}, 0xc0000f8100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a74a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46174: template: signup.html:17: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013360})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001821c0}, {0x0, 0x0}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001821c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc0001821c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001821c0}, 0xc0000f8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000097e60?}, {0x94cb80, 0xc0001821c0}, 0xc0000f8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7540, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46178: template: signup.html:17: unexpected EOF
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013510})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001822a0}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001822a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc0001822a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001822a0}, 0xc0000f8300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000097f20?}, {0x94cb80, 0xc0001822a0}, 0xc0000f8300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a75e0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46186: template: signup.html:17: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0002221a0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00023a000}, {0x0, 0x0}, {0xc00021a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc00023a000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc00023a000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00023a000}, 0xc000224000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000206090?}, {0x94cb80, 0xc00023a000}, 0xc000224000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00020a000, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46198: template: signup.html:17: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0001181a0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130000}, {0x0, 0x0}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc000130000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130000}, 0xc00011c000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000114030?}, {0x94cb80, 0xc000130000}, 0xc00011c000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00020a0a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46204: template: signup.html:17: unexpected EOF
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000118350})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001300e0}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001300e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc0001300e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001300e0}, 0xc0000f8400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c4d20?}, {0x94cb80, 0xc0001300e0}, 0xc0000f8400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00020a140, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46218: template: signup.html:17: unexpected EOF
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000118510})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001301c0}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001301c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc0001301c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001301c0}, 0xc00011c100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000114ed0?}, {0x94cb80, 0xc0001301c0}, 0xc00011c100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176000, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46224: template: signup.html:17: unexpected EOF
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0001186d0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001302a0}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001302a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc0001302a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001302a0}, 0xc00011c300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115620?}, {0x94cb80, 0xc0001302a0}, 0xc00011c300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001760a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46236: template: signup.html:17: unexpected EOF
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000118890})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130380}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130380}, 0xc00011c400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115d70?}, {0x94cb80, 0xc000130380}, 0xc00011c400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176140, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:46242: template: signup.html:17: unexpected EOF
+goroutine 73 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000118a50})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130460}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130460?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130460?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130460}, 0xc00011c500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002b04e0?}, {0x94cb80, 0xc000130460}, 0xc00011c500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001761e0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:38236: template: signup.html:17: unexpected EOF
+goroutine 78 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000118c10})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130540}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130540?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130540?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130540}, 0xc00011c600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002b0c30?}, {0x94cb80, 0xc000130540}, 0xc00011c600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176280, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:38246: template: signup.html:17: unexpected EOF
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000118dd0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130620}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130620?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130620?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130620}, 0xc00011c700)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002b1380?}, {0x94cb80, 0xc000130620}, 0xc00011c700)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176320, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:38262: template: signup.html:17: unexpected EOF
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000118f90})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130700}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130700?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130700?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130700}, 0xc00011c800)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002b1ad0?}, {0x94cb80, 0xc000130700}, 0xc00011c800)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001763c0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:38274: template: signup.html:17: unexpected EOF
+goroutine 93 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119150})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001307e0}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001307e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc0001307e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001307e0}, 0xc00011c900)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002fc240?}, {0x94cb80, 0xc0001307e0}, 0xc00011c900)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176460, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:38276: template: signup.html:17: unexpected EOF
+goroutine 98 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000136d0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182380}, {0x0, 0x0}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000182380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc000182380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182380}, 0xc000392000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000384090?}, {0x94cb80, 0xc000182380}, 0xc000392000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000388000, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:38292: template: signup.html:17: unexpected EOF
+goroutine 114 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119310})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001308c0}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001308c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc0001308c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001308c0}, 0xc00011ca00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002fc990?}, {0x94cb80, 0xc0001308c0}, 0xc00011ca00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176500, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:56 server.go:3197: http: panic serving [::1]:38308: template: signup.html:17: unexpected EOF
+goroutine 119 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0001194d0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001309a0}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001309a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc0001309a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001309a0}, 0xc00011cb00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002fd0e0?}, {0x94cb80, 0xc0001309a0}, 0xc00011cb00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001765a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:38:57 server.go:3197: http: panic serving [::1]:38320: template: signup.html:17: unexpected EOF
+goroutine 124 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119690})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130a80}, {0x0, 0x0}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130a80?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc000130a80?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130a80}, 0xc00011cc00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002fd830?}, {0x94cb80, 0xc000130a80}, 0xc00011cc00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176640, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:39:03 server.go:3197: http: panic serving [::1]:38332: template: signup.html:17: unexpected EOF
+goroutine 99 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119840})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130b60}, {0x0, 0x0}, {0xc0002179e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130b60?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130b60?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130b60}, 0xc000392100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000384150?}, {0x94cb80, 0xc000130b60}, 0xc000392100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0003880a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:39:03 server.go:3197: http: panic serving [::1]:38334: template: signup.html:17: unexpected EOF
+goroutine 133 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119a00})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130c40}, {0x0, 0x0}, {0xc0002179e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130c40?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130c40?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130c40}, 0xc00011cd00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000378630?}, {0x94cb80, 0xc000130c40}, 0xc00011cd00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001766e0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:39:03 server.go:3197: http: panic serving [::1]:38348: template: signup.html:17: unexpected EOF
+goroutine 138 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119bc0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130d20}, {0x0, 0x0}, {0xc0002179e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130d20?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130d20?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130d20}, 0xc00011ce00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000378d80?}, {0x94cb80, 0xc000130d20}, 0xc00011ce00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176780, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:39:33 server.go:3197: http: panic serving [::1]:44264: template: signup.html:17: unexpected EOF
+goroutine 143 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119d80})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130e00}, {0x0, 0x0}, {0xc0002179e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130e00?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000130e00?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130e00}, 0xc00011cf00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003794d0?}, {0x94cb80, 0xc000130e00}, 0xc00011cf00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176820, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:39:33 server.go:3197: http: panic serving [::1]:44276: template: signup.html:17: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000119f30})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130ee0}, {0x0, 0x0}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130ee0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc000130ee0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130ee0}, 0xc0000f8500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c5470?}, {0x94cb80, 0xc000130ee0}, 0xc0000f8500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7680, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:39:33 server.go:3197: http: panic serving [::1]:44282: template: signup.html:17: unexpected EOF
+goroutine 152 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0004620f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000130fc0}, {0x0, 0x0}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000130fc0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc000130fc0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000130fc0}, 0xc00011d000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00044e2d0?}, {0x94cb80, 0xc000130fc0}, 0xc00011d000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001768c0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:40:33 server.go:3197: http: panic serving [::1]:47384: template: signup.html:17: unexpected EOF
+goroutine 157 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0004622b0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001310a0}, {0x0, 0x0}, {0xc0002169e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc0001310a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e598?, {0x94cb80?, 0xc0001310a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001310a0}, 0xc00011d100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00044ea20?}, {0x94cb80, 0xc0001310a0}, 0xc00011d100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176960, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:40:33 server.go:3197: http: panic serving [::1]:47388: template: signup.html:17: unexpected EOF
+goroutine 100 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000462460})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000131180}, {0x0, 0x0}, {0xc0002189e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000131180?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000131180?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000131180}, 0xc000392200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000384240?}, {0x94cb80, 0xc000131180}, 0xc000392200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000388140, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:40:33 server.go:3197: http: panic serving [::1]:47394: template: signup.html:17: unexpected EOF
+goroutine 166 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000462620})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000131260}, {0x0, 0x0}, {0xc0002189e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.signup({0x94cb80?, 0xc000131260?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_auth.go:8 +0x8d
+net/http.HandlerFunc.ServeHTTP(0x7fea5509e688?, {0x94cb80?, 0xc000131260?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000131260}, 0xc00011d200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00044f800?}, {0x94cb80, 0xc000131260}, 0xc00011d200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000176a00, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:12 server.go:3197: http: panic serving [::1]:51220: template: layout.html:12: unexpected <define> in command
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000130f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001820e0}, {0x846800, 0x94a120}, {0xc0000b19e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001820e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc0001820e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001820e0}, 0xc0000f8100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000976b0?}, {0x94cb80, 0xc0001820e0}, 0xc0000f8100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a74a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:12 server.go:3197: http: panic serving [::1]:51230: template: layout.html:12: unexpected <define> in command
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013220})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001821c0}, {0x846800, 0x94a120}, {0xc0000679e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001821c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc0001821c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001821c0}, 0xc0000f8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000097bc0?}, {0x94cb80, 0xc0001821c0}, 0xc0000f8200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7540, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:12 server.go:3197: http: panic serving [::1]:51246: template: layout.html:12: unexpected <define> in command
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013330})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001822a0}, {0x846800, 0x94a120}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001822a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523598?, {0x94cb80?, 0xc0001822a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001822a0}, 0xc0000f8300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000097c80?}, {0x94cb80, 0xc0001822a0}, 0xc0000f8300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a75e0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:12 server.go:3197: http: panic serving [::1]:51258: template: layout.html:12: unexpected <define> in command
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013450})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182380}, {0x846800, 0x94a120}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523598?, {0x94cb80?, 0xc000182380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182380}, 0xc0000f8400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001bc5a0?}, {0x94cb80, 0xc000182380}, 0xc0000f8400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7680, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51268: template: layout.html:12: unexpected <define> in command
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013570})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182460}, {0x846800, 0x94a120}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182460?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523598?, {0x94cb80?, 0xc000182460?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182460}, 0xc0000f8500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001bca20?}, {0x94cb80, 0xc000182460}, 0xc0000f8500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7720, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51270: template: layout.html:12: unexpected <define> in command
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013690})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182540}, {0x846800, 0x94a120}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182540?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523598?, {0x94cb80?, 0xc000182540?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182540}, 0xc0000f8600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001bcea0?}, {0x94cb80, 0xc000182540}, 0xc0000f8600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a77c0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51286: template: layout.html:12: unexpected <define> in command
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000137b0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182620}, {0x846800, 0x94a120}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182620?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523598?, {0x94cb80?, 0xc000182620?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182620}, 0xc0000f8700)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001bd320?}, {0x94cb80, 0xc000182620}, 0xc0000f8700)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7860, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51296: template: layout.html:12: unexpected <define> in command
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000138d0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182700}, {0x846800, 0x94a120}, {0xc0000689e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182700?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f98039fc118?, {0x94cb80?, 0xc000182700?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182700}, 0xc0000f8800)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001bd7a0?}, {0x94cb80, 0xc000182700}, 0xc0000f8800)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7900, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51304: template: layout.html:12: unexpected <define> in command
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000139e0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001827e0}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001827e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc0001827e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001827e0}, 0xc000264000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000244090?}, {0x94cb80, 0xc0001827e0}, 0xc000264000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000248000, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51312: template: layout.html:12: unexpected <define> in command
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013b00})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001828c0}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001828c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc0001828c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001828c0}, 0xc0000f8900)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fe000?}, {0x94cb80, 0xc0001828c0}, 0xc0000f8900)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a79a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51326: template: layout.html:12: unexpected <define> in command
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013c20})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001829a0}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001829a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc0001829a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001829a0}, 0xc0000f8a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fe480?}, {0x94cb80, 0xc0001829a0}, 0xc0000f8a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7a40, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51342: template: layout.html:12: unexpected <define> in command
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013d40})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182a80}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182a80?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc000182a80?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182a80}, 0xc0000f8b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fe900?}, {0x94cb80, 0xc000182a80}, 0xc0000f8b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7ae0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51354: template: layout.html:12: unexpected <define> in command
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013e60})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182b60}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182b60?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc000182b60?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182b60}, 0xc0000f8c00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fed80?}, {0x94cb80, 0xc000182b60}, 0xc0000f8c00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7b80, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51364: template: layout.html:12: unexpected <define> in command
+goroutine 62 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000013f80})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182c40}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182c40?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc000182c40?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182c40}, 0xc0000f8d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001ff200?}, {0x94cb80, 0xc000182c40}, 0xc0000f8d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7c20, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51380: template: layout.html:12: unexpected <define> in command
+goroutine 65 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0002ec0a0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182d20}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182d20?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc000182d20?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182d20}, 0xc0000f8e00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001ff680?}, {0x94cb80, 0xc000182d20}, 0xc0000f8e00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7cc0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51386: template: layout.html:12: unexpected <define> in command
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0002ec1c0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182e00}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182e00?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc000182e00?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182e00}, 0xc0000f8f00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001ffb00?}, {0x94cb80, 0xc000182e00}, 0xc0000f8f00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7d60, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51392: template: layout.html:12: unexpected <define> in command
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0002ec2e0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182ee0}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182ee0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc000182ee0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182ee0}, 0xc0000f9000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fff80?}, {0x94cb80, 0xc000182ee0}, 0xc0000f9000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7e00, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51394: template: layout.html:12: unexpected <define> in command
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0002ec400})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000182fc0}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000182fc0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc000182fc0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000182fc0}, 0xc0000f9100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000312420?}, {0x94cb80, 0xc000182fc0}, 0xc0000f9100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7ea0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:13 server.go:3197: http: panic serving [::1]:51408: template: layout.html:12: unexpected <define> in command
+goroutine 77 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0002ec520})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001830a0}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001830a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc0001830a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001830a0}, 0xc0000f9200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003128a0?}, {0x94cb80, 0xc0001830a0}, 0xc0000f9200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000a7f40, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:14 server.go:3197: http: panic serving [::1]:51420: template: layout.html:12: unexpected <define> in command
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000262110})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00027a000}, {0x846800, 0x94a120}, {0xc00025b9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00027a000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc00027a000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00027a000}, 0xc000264100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000244150?}, {0x94cb80, 0xc00027a000}, 0xc000264100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002480a0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:14 server.go:3197: http: panic serving [::1]:51428: template: layout.html:12: unexpected <define> in command
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000262230})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00027a0e0}, {0x846800, 0x94a120}, {0xc00025b9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00027a0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc00027a0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00027a0e0}, 0xc000264200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000244600?}, {0x94cb80, 0xc00027a0e0}, 0xc000264200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000248140, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:14 server.go:3197: http: panic serving [::1]:51444: template: layout.html:12: unexpected <define> in command
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000262350})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00027a1c0}, {0x846800, 0x94a120}, {0xc00025b9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00027a1c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc00027a1c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00027a1c0}, 0xc000264300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000244a80?}, {0x94cb80, 0xc00027a1c0}, 0xc000264300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002481e0, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:19 server.go:3197: http: panic serving [::1]:43388: template: layout.html:12: unexpected <define> in command
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc000262470})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00027a2a0}, {0x846800, 0x94a120}, {0xc00025b9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00027a2a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523688?, {0x94cb80?, 0xc00027a2a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00027a2a0}, 0xc000264400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000244f00?}, {0x94cb80, 0xc00027a2a0}, 0xc000264400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000248280, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:19 server.go:3197: http: panic serving [::1]:43400: template: layout.html:12: unexpected <define> in command
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc00041a0f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00041c000}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00041c000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523598?, {0x94cb80?, 0xc00041c000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00041c000}, 0xc0000f9300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000312cc0?}, {0x94cb80, 0xc00041c000}, 0xc0000f9300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00011a000, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:19 server.go:3197: http: panic serving [::1]:43416: template: layout.html:12: unexpected <define> in command
+goroutine 100 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc00041a210})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00041c0e0}, {0x846800, 0x94a120}, {0xc00025a9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00041c0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f97da523598?, {0x94cb80?, 0xc00041c0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00041c0e0}, 0xc000422100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000406480?}, {0x94cb80, 0xc00041c0e0}, 0xc000422100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00045c000, {0x94ce38, 0xc0000975c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:55:40 server.go:3197: http: panic serving [::1]:45750: template: layout.html:12: unexpected <define> in command
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc0000990d0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0001280e0}, {0x846800, 0x94a120}, {0xc0000cd9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0001280e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f2e1db04b30?, {0x94cb80?, 0xc0001280e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0001280e0}, 0xc00011e100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000ab6b0?}, {0x94cb80, 0xc0001280e0}, 0xc00011e100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c3540, {0x94ce38, 0xc0000ab5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:56:10 server.go:3197: http: panic serving [::1]:45756: template: layout.html:12: unexpected <define> in command
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc00019a0f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019c000}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019c000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f2e1db0cdf8?, {0x94cb80?, 0xc00019c000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019c000}, 0xc00011e200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000abbc0?}, {0x94cb80, 0xc00019c000}, 0xc00011e200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c35e0, {0x94ce38, 0xc0000ab5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:56:10 server.go:3197: http: panic serving [::1]:45768: template: layout.html:12: unexpected <define> in command
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc00019a200})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019c0e0}, {0x846800, 0x94a120}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019c0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f2e1db0cd08?, {0x94cb80?, 0xc00019c0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019c0e0}, 0xc00011e300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000abc80?}, {0x94cb80, 0xc00019c0e0}, 0xc00011e300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000c3680, {0x94ce38, 0xc0000ab5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:56:10 server.go:3197: http: panic serving [::1]:45130: template: layout.html:12: unexpected <define> in command
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc00019a320})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019c1c0}, {0x846800, 0x94a120}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019c1c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f2e1db0cd08?, {0x94cb80?, 0xc00019c1c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019c1c0}, 0xc0001f4000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001868d0?}, {0x94cb80, 0xc00019c1c0}, 0xc0001f4000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001f2000, {0x94ce38, 0xc0000ab5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 11:56:10 server.go:3197: http: panic serving [::1]:45144: template: layout.html:12: unexpected <define> in command
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x855c40, 0xc00019a440})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019c2a0}, {0x846800, 0x94a120}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019c2a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7f2e1db0cd08?, {0x94cb80?, 0xc00019c2a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019c2a0}, 0xc0001f4100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186d50?}, {0x94cb80, 0xc00019c2a0}, 0xc0001f4100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001f20a0, {0x94ce38, 0xc0000ab5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:26 server.go:3197: http: panic serving [::1]:41122: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00011bb90})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e0e0}, {0x846800, 0x94a120}, {0xc00013f9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011b6b0?}, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135540, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:27 server.go:3197: http: panic serving [::1]:41130: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001dc0f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e1c0}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e1c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e1c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e1c0}, 0xc000194200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011bc50?}, {0x94cb80, 0xc00019e1c0}, 0xc000194200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001355e0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:27 server.go:3197: http: panic serving [::1]:41132: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001dc630})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e2a0}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e2a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e2a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e2a0}, 0xc000194300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dc1b0?}, {0x94cb80, 0xc00019e2a0}, 0xc000194300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135680, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:27 server.go:3197: http: panic serving [::1]:41148: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001dcb70})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e380}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e380}, 0xc000194400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dc6f0?}, {0x94cb80, 0xc00019e380}, 0xc000194400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135720, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:28 server.go:3197: http: panic serving [::1]:41154: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001dd0b0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e460}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e460?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e460?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e460}, 0xc000194500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dcc30?}, {0x94cb80, 0xc00019e460}, 0xc000194500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001357c0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:33 server.go:3197: http: panic serving [::1]:41156: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000092450})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c000}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00009c000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c000}, 0xc000194600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dd170?}, {0x94cb80, 0xc00009c000}, 0xc000194600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135860, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:33 server.go:3197: http: panic serving [::1]:41170: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000092990})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c0e0}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00009c0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c0e0}, 0xc0000cc000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000092510?}, {0x94cb80, 0xc00009c0e0}, 0xc0000cc000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca000, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:04:33 server.go:3197: http: panic serving [::1]:41172: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000092ed0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c1c0}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c1c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00009c1c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c1c0}, 0xc0000cc100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000092a50?}, {0x94cb80, 0xc00009c1c0}, 0xc0000cc100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca0a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:05:03 server.go:3197: http: panic serving [::1]:48342: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000093410})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c2a0}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c2a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00009c2a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c2a0}, 0xc0000cc200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000092f90?}, {0x94cb80, 0xc00009c2a0}, 0xc0000cc200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca140, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:03 server.go:3197: http: panic serving [::1]:37452: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000304540})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000328000}, {0x846800, 0x94a120}, {0xc0000639e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000328000?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc000328000?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000328000}, 0xc000312000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000304090?}, {0x94cb80, 0xc000328000}, 0xc000312000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000308000, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:03 server.go:3197: http: panic serving [::1]:37454: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0000938f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c380}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc00009c380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c380}, 0xc0000cc300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000093470?}, {0x94cb80, 0xc00009c380}, 0xc0000cc300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0003080a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:03 server.go:3197: http: panic serving [::1]:37460: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000093e30})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c460}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c460?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc00009c460?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c460}, 0xc0000cc400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000939b0?}, {0x94cb80, 0xc00009c460}, 0xc0000cc400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca1e0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:29 server.go:3197: http: panic serving [::1]:39776: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 86 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001dd710})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e540}, {0x846800, 0x94a120}, {0xc0000649e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e540?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc00019e540?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e540}, 0xc000194800)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dd260?}, {0x94cb80, 0xc00019e540}, 0xc000194800)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca280, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39780: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0001ddd40})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e620}, {0x846800, 0x94a120}, {0xc0000649e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e620?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc00019e620?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e620}, 0xc000194900)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dd7d0?}, {0x94cb80, 0xc00019e620}, 0xc000194900)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135900, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39782: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000256210})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e700}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e700?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e700?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e700}, 0xc000194a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001dd890?}, {0x94cb80, 0xc00019e700}, 0xc000194a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001359a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39798: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0002567b0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e7e0}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e7e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e7e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e7e0}, 0xc000194b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000256330?}, {0x94cb80, 0xc00019e7e0}, 0xc000194b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135a40, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39808: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 47 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000256cf0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e8c0}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e8c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e8c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e8c0}, 0xc000194c00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000256870?}, {0x94cb80, 0xc00019e8c0}, 0xc000194c00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135ae0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39810: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 98 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000257230})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e9a0}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e9a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc00019e9a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e9a0}, 0xc000194d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000256db0?}, {0x94cb80, 0xc00019e9a0}, 0xc000194d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135b80, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39816: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 101 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000304a50})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0003280e0}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0003280e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc0003280e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0003280e0}, 0xc000194e00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002572f0?}, {0x94cb80, 0xc0003280e0}, 0xc000194e00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000135c20, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39830: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 72 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000304ff0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0003281c0}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0003281c0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc0003281c0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0003281c0}, 0xc000312100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000304b70?}, {0x94cb80, 0xc0003281c0}, 0xc000312100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000308140, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39844: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 75 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000305530})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc0003282a0}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc0003282a0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc0003282a0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc0003282a0}, 0xc000312200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003050b0?}, {0x94cb80, 0xc0003282a0}, 0xc000312200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0003081e0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39848: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 78 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc000305a70})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc000328380}, {0x846800, 0x94a120}, {0xc0000659e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc000328380?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460edf8?, {0x94cb80?, 0xc000328380?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc000328380}, 0xc000312300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003055f0?}, {0x94cb80, 0xc000328380}, 0xc000312300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000308280, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39858: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 87 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0003a03f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c540}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c540?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc00009c540?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c540}, 0xc0000cc500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000093f50?}, {0x94cb80, 0xc00009c540}, 0xc0000cc500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca320, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:30 server.go:3197: http: panic serving [::1]:39870: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 90 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0003a0930})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c620}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c620?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc00009c620?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c620}, 0xc0000cc600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003a04b0?}, {0x94cb80, 0xc00009c620}, 0xc0000cc600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca3c0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:31 server.go:3197: http: panic serving [::1]:39882: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 93 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc0003a0e70})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00009c700}, {0x846800, 0x94a120}, {0xc0000629e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00009c700?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7fa19460ed08?, {0x94cb80?, 0xc00009c700?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00009c700}, 0xc0000cc700)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003a09f0?}, {0x94cb80, 0xc00009c700}, 0xc0000cc700)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000ca460, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
+2024/12/04 12:06:41 server.go:3197: http: panic serving [::1]:46518: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0xbf
+panic({0x867ee0, 0xc00011bb90})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/lib/go-1.18/src/html/template/template.go:374
+togo_app/app/controllers.generateHTML({0x94cb80?, 0xc00019e0e0}, {0x846800, 0x94a120}, {0xc00013f9e0?, 0x3, 0x0?})
+	/home/urabex/07.Go_practice/togo_app/app/controllers/server.go:15 +0x106
+togo_app/app/controllers.top({0x94cb80?, 0xc00019e0e0?}, 0x0?)
+	/home/urabex/07.Go_practice/togo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0x7faab5a40df8?, {0x94cb80?, 0xc00019e0e0?}, 0x415b85?)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011b6b0?}, {0x94cb80, 0xc00019e0e0}, 0xc000194100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001354a0, {0x94ce38, 0xc00011b5c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x4db
